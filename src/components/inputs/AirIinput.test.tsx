@@ -48,7 +48,7 @@ describe('air input does what it should...', () => {
         cleanup();
       });
       it('sets the placeholder text for the input', async () => {
-        render(<AirInput placeholder="My Placeholder" />);
+        render(<AirInput placeholder="My Placeholder Fail" />);
 
         expect(queryInput()).toHaveAttribute('placeholder', 'My Placeholder');
       });
